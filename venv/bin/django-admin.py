@@ -1,4 +1,4 @@
-#!/Users/aydin/Desktop/devsearch/venv/bin/python3.6
+#!/Users/aydin/dev/devsearch/venv/bin/python3.6
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
