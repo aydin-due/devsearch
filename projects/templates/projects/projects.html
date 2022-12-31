@@ -1,4 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
+{{message}}
+{% if num > 10 %}
+    <p>num > 10</p>
+{% else %}
+    <p>num <= 10</p>
+{% endif %}
 <h1>Projects</h1>
+<ul>
+    {% for project in projects %}
+    <li><a href="{% url 'project' project.id %}">{{project.title}}</a> - {{project.description}}</li>
+    {% endfor %}
+</ul>
 {% endblock %}
